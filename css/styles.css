@@ -77,17 +77,18 @@ img {
 
 .btn {
     display: inline-block;
-    padding: 2rem 2.5rem;
+    padding: 1rem 3rem;
     border: 3px solid var(--colorTerciario);
-    border-radius: 4rem;
+    border-radius: 5rem;
     font-weight: 600;
-    transition-property: background-color ;
+    transition-property: background-color color border ;
     transition-duration: .5s;
 }
 
 .btn:hover {
     background-color: var(--colorPrimarioTrasparencia);
     color: var(--colorTerciario);
+    border: 3px solid var(--colorSecundario);
 }
 
 .container {
@@ -105,7 +106,6 @@ img {
 
 .header {
     background-color: rgba(0, 0, 0, .8);
- /*    background-color:red; */
     position: fixed;
     z-index: 10;
     top: 0;
