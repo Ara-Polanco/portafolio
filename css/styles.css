@@ -8,8 +8,7 @@
     --colorSecundario: #A2678A;
     --colorSecundarioTransparent: #a2678ac7;
     --colorTerciario: #F4F9F9;
-    /* --colorTerciario: #F4EAE0;
-    --colorN: #F4F9F9; */
+  
 
     --fuentePrincipal:  'Lora', serif;
     --separacion: 3rem;
@@ -100,8 +99,6 @@ img {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
-  /*   border: 3px solid red;
-    background-color: green; */
 }
 
 .start {
@@ -175,16 +172,14 @@ img {
 
 .about-me__img {
     max-width: 40rem;
+    border: 1rem solid #a08ba41b;
+    padding: 1rem;
+    border-radius: var(--separacion);
 }
 
 .about-me__picture {
     width: 100%;
     border-radius: var(--separacion);
-    padding: 1.5rem;
-
-    background-color: var(--colorSecundarioTransparent);
-    background-color: #a08ba41b;
-    /*    border: 3px solid red; */
 }
 
 .about-me__header {
@@ -198,6 +193,7 @@ img {
     font-size: 2.2rem;
     display: inline-block;
     line-height: 1.5;
+    letter-spacing: 3px;
 }
 .about-me__profession::before,
 .about-me__profession::after {
@@ -225,10 +221,12 @@ img {
     color: var(--colorTerciario);
     border: 3px solid var(--colorPrimario);
 }
+
 /* Education */
 .education {
-    background-image: linear-gradient(rgba(178, 175, 178, 0.3), rgba(178, 175, 178, 0.3)), url('/assets/leaves.webp');
+    background-image: linear-gradient(rgba(207, 204, 207, 0.3), rgba(207, 204, 207, 0.3)), url('/assets/leaves.webp');
     background-repeat: repeat;
+    margin-bottom: var(--separacion);
 }
 
 .education__header {
@@ -237,7 +235,7 @@ img {
     color: var(--colorTerciario);
     font-size: 4rem;
     letter-spacing: 3px;
-    text-shadow: 0 0 5px purple;
+    text-shadow: 0 0 5px var(--colorSecundario);
 }
 
 .education__container {
@@ -313,6 +311,20 @@ img {
 
 .skills__i:hover {
     font-size: 5rem;
+}
+
+/* Projects */
+.proyects {
+ 
+
+}
+
+.projects__header {
+    text-align: center;
+    color: var(--colorSecundario);
+    color: var(--colorSecundario);
+    font-size: 4rem;
+    letter-spacing: 3px;
 }
 
 
