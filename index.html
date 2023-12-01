@@ -10,18 +10,18 @@
 </head>
 <body>
     
-    <section id="inicio" class="start">
+    <section id="start" class="start">
             <header class="header ">
                 <div class="header__container">
                     <h1>{ Araceli }</h1>
 
                     <nav id="header__nav">
                         <ul id="header__links">
-                            <li><a href="#inicio" class="focus">Inicio</a></li>
-                            <li><a href="#sobremi">Sobre Mí</a></li>
-                            <li><a href="#educacion">Educación</a></li>
-                            <li><a href="#portafolio">Portafolio</a></li>
-                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="#start" class="focus">Inicio</a></li>
+                            <li><a href="#aboutme">Sobre Mí</a></li>
+                            <li><a href="#education">Educación</a></li>
+                            <li><a href="#projects">Portafolio</a></li>
+                            <li><a href="#contact">Contacto</a></li>
                         </ul>
                     </nav>
 
@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <section class="about-me container" id="sobremi">
+    <section class="about-me container" id="aboutme">
         <div class="about-me__img">
             <img class="about-me__picture" src="/assets/profile-picture.jpg" alt="Profile picture">
         </div>
@@ -61,7 +61,7 @@
     </section>
 
 <!-- Educación -->
-    <section class="education " id="educacion"> 
+    <section class="education " id="education"> 
         <h2 class="education__header container">Educación</h2>
 
         <div class="education__container">
@@ -174,7 +174,7 @@
     </section>
 
     <!-- Portafolio -->
-    <section class="projects" id="portafolio">
+    <section class="projects" id="projects">
         <h3 class="projects__header">Mis Proyectos</h3>
 
         <div class="projects__container container">
@@ -236,7 +236,31 @@
 
     </section>
 
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h3 class="contact__header">Contáctame</h3>
+        <div class="contact__container">
+            <form action="" class="contact__form">
 
+                <div class="contact__inputs">
+                    <div class="contact__row-1">
+                        <input type="text" placeholder="Nombre" class="contact__input" name="contact__input">
+                        <input type="email" placeholder="Correo" class="contact__input" name="contact__input">
+                    </div>
+                    
+                    <div class="contact__row-2">
+                        <input type="number" placeholder="Teléfono" class="contact__input" name="contact__input">
+                        <input type="text" placeholder="Asunto" class="contact__input" name="contact__input">
+                    </div>
+                </div>
+                <textarea class="contact__msj" name="contact__msj" placeholder="Mensaje" id="contact__msj" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="contact__submit" name="contact__submit" id="contact__submit">
+                
+            </form>
+        </div>
+
+    </section>
 
 </body>
 </html>
