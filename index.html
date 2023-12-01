@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/styles.css">
     <title>{ } Araceli Polanco Desarrollo Web</title>
@@ -18,7 +19,7 @@
                         <ul id="header__links">
                             <li><a href="#inicio" class="focus">Inicio</a></li>
                             <li><a href="#sobremi">Sobre Mí</a></li>
-                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#educacion">Educación</a></li>
                             <li><a href="#portafolio">Portafolio</a></li>
                             <li><a href="#contacto">Contacto</a></li>
                         </ul>
@@ -60,122 +61,110 @@
     </section>
 
 <!-- Educación -->
-    <section class="education container " id="skills"> <!-- id="skills" ?-->
-        <h2 class="education__header">Mi Preparación</h2>
+    <section class="education " id="educacion"> 
+        <h2 class="education__header container">Educación</h2>
 
         <div class="education__container">
 
-            <div class="education__info">
-                <div class="education__col">
-                    <h3 class="education__title btn">Formación Academica</h3>
+            <div class="education__academics">
 
-                    <table>
-
-                        <tr>
-                            <td>
-                                <h3 class="education__university">Licenciatura en Informática</h3>
-                                <p class="education__container__school">Universidad América Latina</p>
-                                <p class="education__year"> 2018 - 2022</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3 class="btn">Certificación y Cursos</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>SCRUM Fundamentals Certified </h3>
-                                <p>SRUMstudy</p>
-                                <p>2023</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Curso de JavaScript</h3>
-                                <p>Udemy</p>
-                                <p> 2023</p>
-                            </td>
-                        </tr>
-                        <tr>
-                        <tr>
-                            <td>
-                                <h3>Curso de SASS</h3>
-                                <p>Udemy</p>
-                                <p> 2023</p>
-                            </td>
-                        </tr>
-                        <tr>
-                        <tr>
-                            <td>
-                                <h3>Curso de HTML y CSS</h3>
-                                <p>Udemy</p>
-                                <p> 2023</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <h3>Máster en SQL Server</h3>
-                                <p>Udemy</p>
-                                <p> 2022</p>
-                            </td>
-                        </tr>
-
-                    </table>
+                <div class="education__academic">
+                    <h3 class="education__title">Formación Academica</h3>
+    
+                    <div class="education__info">
+                        <h3 class="education__university">Licenciatura en Informática</h3>
+                        <p class="education__school">Universidad América Latina</p>
+                        <p class="education__year"> 2018 - 2023</p>
+                    </div>
                 </div>
-            </div>
 
+                <div class="education__academic">
+                    <h3 class="education__certifications ">Certificación y Cursos</h3>
+        
+                    <div class="education__info">
+                        <h3 class="education__certification">SCRUM Fundamentals Certified </h3>
+                        <p class="education__school">SRUMstudy</p>
+                        <p class="education__year">2023</p>
+                    </div>
+    
+                    <div class="education__info">
+                        <h3 class="education__course">Curso de JavaScript</h3>
+                        <p class="education__school">Udemy</p>
+                        <p class="education__year"> 2023</p>
+                    </div>
+    
+                    <div class="education__info">
+                        <h3 class="education__course">Curso de SASS</h3>
+                        <p class="education__school">Udemy</p>
+                        <p class="education__year"> 2023</p>
+                    </div>
+    
+                    <div class="education__info">
+                        <h3 class="education__course">Curso de HTML y CSS</h3>
+                        <p class="education__school">Udemy</p>
+                        <p class="education__year"> 2023</p>
+                    </div>
+    
+                    <div class="education__info">
+                        <h3 class="education__course">Máster en SQL Server</h3>
+                        <p class="education__school">Udemy</p>
+                        <p class="education__year"> 2022</p>
+                    </div>
+                </div>
+    
+            </div>
+                    
+            
             <div class="skills ">
-                <h3 class="skills__title btn">Habilidades</h3>
+                <h3 class="skills__title ">Tecnologías</h3>
             
                 <div class="skills__info">
-                    <ul>
-                        <li>
+                    <ul class="skills__ul">
+                        <li class="skills__li">
+                            <i class="fa-solid fa-code skills__i"></i>
                             <p class="skills__text"> HTML</p>
-                            <i class="fa-solid fa-code"></i>
                         </li>
     
-                        <li>
+                        <li class="skills__li">
+                            <i class="fa-brands fa-css3-alt skills__i"></i>
                             <p class="skills__text"> CSS</p>
-                            <i class="fa-brands fa-css3-alt"></i>
                         </li>
     
-                        <li>
+                        <li class="skills__li">
+                            <i class="fa-brands fa-js skills__i"></i>
                             <p class="skills__text"> JavaScript</p>
-                            <i class="fa-brands fa-js"></i>
                         </li>
-                        <li>
+                        <li class="skills__li">
+                            <i class="fa-brands fa-sass skills__i"></i>
                             <p class="skills__text"> SASS</p>
-                            <i class="fa-brands fa-sass"></i>
                         </li>
-                        <li>
+                        <li class="skills__li">
+                            <i class="fa-brands fa-git-alt skills__i"></i>
                             <p class="skills__text"> Git</p>
-                            <i class="fa-brands fa-git-alt"></i>
                         </li>
-                        <li>
+                        <li class="skills__li">
+                            <i class="fa-brands fa-github skills__i"></i>
                             <p class="skills__text"> GitHub</p>
-                            <i class="fa-brands fa-github"></i>
                         </li>
     
-                        <li>
+                        <li class="skills__li">
+                            <i class="fa-brands fa-npm skills__i"></i>
                             <p class="skills__text"> NPM</p>
-                            <i class="fa-brands fa-npm"></i>
                         </li>
     
-                        <li>
+                        <li class="skills__li">
+                            <i class="fa-brands fa-gulp skills__i"></i>
                             <p class="skills__text"> Gulp</p>
-                            <i class="fa-brands fa-gulp"></i>
                         </li>
     
-                        <li>
+                        <li class="skills__li">
+                            <i class="fa-solid fa-database skills__i"></i>
                             <p class="skills__text"> SQL</p>
-                            <i class="fa-solid fa-database"></i>
                         </li>
     
-                        <li>
+                        <li class="skills__li">
+                            <i class="fa-solid fa-terminal skills__i"></i>
                             <p class="skills__text"> CLI</p>
-                            <i class="fa-solid fa-terminal"></i>
                         </li>
     
                     </ul>

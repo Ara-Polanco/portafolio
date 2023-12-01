@@ -57,7 +57,6 @@ a:hover{
 
 i {
     font-size: 3rem;
-   
 }
 
 i:hover {
@@ -77,7 +76,6 @@ img {
     max-width: 100%;
     display: block;
 }
-
 
 .btn {
     display: inline-block;
@@ -184,8 +182,8 @@ img {
     border-radius: var(--separacion);
     padding: 1.5rem;
 
-    background-color: var(--colorPrimarioTrasparencia);
-    background-color: #a7829514;
+    background-color: var(--colorSecundarioTransparent);
+    background-color: #a08ba41b;
     /*    border: 3px solid red; */
 }
 
@@ -229,28 +227,92 @@ img {
 }
 /* Education */
 .education {
-    
+    background-image: linear-gradient(rgba(178, 175, 178, 0.3), rgba(178, 175, 178, 0.3)), url('/assets/leaves.webp');
+    background-repeat: repeat;
 }
 
 .education__header {
-
+    text-align: center;
+    padding-top: var(--separacion);
+    color: var(--colorTerciario);
+    font-size: 4rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px purple;
 }
 
 .education__container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     gap: var(--separacion);
-    
+
+}
+
+.education__academics,
+.skills {
+    width: 45%;
+    text-align: center;
+}
+
+.education__academic{
+    margin-bottom: calc( var(--separacion) * 2);
+}
+
+.education__title, 
+.education__certifications,
+.skills__title {
+   /*  color: var(--colorSecundarioTransparent);
+    font-size: 2rem;
+    margin: 2rem auto; */
+
+    text-transform: uppercase;
+    color:  var(--colorSecundarioTransparent);
+    font-size: 2rem;
+    line-height: 1.5;  
+    margin: 2rem auto;  
+    text-shadow: 0 0 3px var(--colorPrimario); 
 }
 
 .education__info {
-    border: 3px solid red;
- 
+    font-weight: 600;
+    margin: var(--separacion) calc(var(--separacion) * 4);
+    border-right: 3px solid var(--colorSecundarioTransparent);
 }
 
-.skills {
-    border: 3px solid red;
+
+.education__university,
+.education__certification,
+.education__course {
+    border-bottom: 3px solid var(--colorSecundarioTransparent);
+    
 }
 
+/* Skills section */
+.skills__title {
+
+}
+
+.skills__ul {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: var(--separacion);
+    font-weight: 600;
+}
+
+.skills__li {
+    width: 40%;
+}
+
+
+.skills__i {
+    color: var(--colorSecundarioTransparent);
+    font-size: 4rem;
+}
+
+.skills__i:hover {
+    font-size: 5rem;
+}
 
 
