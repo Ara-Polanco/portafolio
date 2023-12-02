@@ -66,7 +66,7 @@ i:hover {
 
 
 ul,
-.header__icons-social-media {
+.icons-social-media {
     list-style: none;
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@ img {
     background-color: var(--colorPrimarioTrasparencia);
 }
 
-.header__icon-nav {
+.icon-nav {
     color: var(--colorTerciario);
     display: none;
 }
@@ -442,5 +442,21 @@ img {
     padding: 1rem 2.5rem;
     font-size: 1.8rem;
     background-color: var(--colorTerciario);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, .7);
+    color: var(--colorPrimarioTrasparencia);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    padding: .5rem ;
+    border: 3px solid red;
+}
+
+.footer a{
+    font-size: .8rem;
 }
 
