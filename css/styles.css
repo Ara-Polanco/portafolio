@@ -15,6 +15,8 @@
 
  }
 
+ 
+
 html {
     font-size: 62.5%; /* 1rem = 10px */
     box-sizing: border-box;
@@ -79,9 +81,9 @@ img {
 .btn {
     display: inline-block;
     padding: .5rem 2.5rem;
-    border: 3px solid var(--colorSecundarioTransparent);
+    border: 2px solid var(--colorSecundarioTransparent);
     color: var(--colorPrimario);
-    border-radius: 5rem;
+    border-radius: 1.3rem;
     font-weight: 600;
     font-size: 1.6rem;
     transition-property: background-color color border ;
@@ -91,7 +93,7 @@ img {
 .btn:hover {
     background-color: var(--colorPrimarioTrasparencia);
     color: var(--colorTerciario);
-    border: 3px solid var(--colorSecundario);
+    border: 2px solid var(--colorSecundario);
 }
 
 /* Header */
@@ -103,6 +105,7 @@ img {
 
 .start {
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/assets/hero.jpg');
+
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -153,22 +156,19 @@ img {
 
 /* About-me */
 .about-me {
-/*     margin-block: calc(var(--separacion) * 3);   Cambiar los margin por paddings */
-    padding: calc(var(--separacion) * 3);
+    padding: calc(var(--separacion) * 4) 0 calc(var(--separacion) * 2) 0;
     color: var(--colorPrimario);
     display: flex;
     gap: var(--separacion);
-  /*   background-color: var(--colorN);   Agregar color albody?*/
-
 }
 
 .about-me__container,
-.projects {
-    color: var(--colorPrimario);
+.education,
+.projects,
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center; /* Elegir */
     align-items: start;
 }
 
@@ -190,7 +190,9 @@ img {
 }
 .about-me__header,
 .about-me__profession,
-.projects__header {
+.education__header,
+.projects__header,
+.contact__header {
     text-transform: uppercase;
     color:  var(--colorSecundarioTransparent);
     font-size: 2.2rem;
@@ -201,6 +203,10 @@ img {
 }
 .about-me__header::before,
 .about-me__header:after,
+.education__header::before,
+.education__header::after,
+.contact__header::before,
+.contact__header::after,
 .projects__header::before,
 .projects__header::after {
     content: '';
@@ -216,7 +222,7 @@ img {
 }
 
 .about-me__link {
-    border: 3px solid var(--colorSecundario);
+    border: 2px solid var(--colorSecundario);
     color:  var(--colorSecundarioTransparent);
 
 }
@@ -224,23 +230,21 @@ img {
 .about-me__link:hover {
     background-color: var(--colorSecundarioTransparent);
     color: var(--colorTerciario);
-    border: 3px solid var(--colorPrimario);
+    border: 2px solid var(--colorPrimario);
 }
 
 /* Education */
 .education {
-    background-image: linear-gradient(rgba(207, 204, 207, 0.3), rgba(207, 204, 207, 0.3)), url('/assets/leaves.webp');
+   /*  background-image: linear-gradient(rgba(207, 204, 207, 0.3), rgba(207, 204, 207, 0.3)), url('/assets/leaves.webp'); */
+    background-image: linear-gradient(to top, #d9afd954 0%, #97dae154 100%), url('/assets/leaves.webp');
+    background-image: linear-gradient(to top, #bdc2e841 0%, #bdc2e85b 1%, #e6dee94e 100%), url('/assets/leaves.webp');
     background-repeat: repeat;
-    margin-bottom: var(--separacion);
+   /*  margin-bottom: var(--separacion); */
+    padding: calc(var(--separacion) * 4) 0 calc(var(--separacion) * 1) 0;
 }
 
 .education__header {
-    text-align: center;
-    padding-top: var(--separacion);
-    color: var(--colorTerciario);
-    font-size: 4rem;
-    letter-spacing: 3px;
-    text-shadow: 0 0 3px var(--colorSecundario);  /* Probar el mismo estilo de header con hover */
+    width: auto;
 }
 
 .education__container {
@@ -256,9 +260,11 @@ img {
     text-align: center;
 }
 
-.education__academic{
-    margin-bottom: calc( var(--separacion) * 2);
+.education__academic:first-child {
+    margin-bottom: calc( var(--separacion) * 2) ;
 }
+
+
 
 .education__title, 
 .education__certifications,
@@ -281,7 +287,6 @@ img {
     border-right: 3px solid var(--colorSecundarioTransparent);
 }
 
-
 .education__university,
 .education__certification,
 .education__course {
@@ -290,10 +295,6 @@ img {
 }
 
 /* Skills section */
-.skills__title {
-
-}
-
 .skills__ul {
     margin-top: 4rem;
     display: flex;
@@ -320,12 +321,13 @@ img {
 
 /* Projects */
 .projects {
+    padding: calc(var(--separacion) * 4) 0 calc(var(--separacion) * 2) 0;
     align-items: center; 
 
 }
 
 .projects__header {
-    margin: calc(var(--separacion) * 2);
+    margin-bottom: calc(var(--separacion) * 2);
 }
 
 .projects__container {
@@ -333,7 +335,6 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: var(--separacion);
- /*    border: 3px solid red; */
 }
 
 .projects__project {
@@ -342,8 +343,6 @@ img {
     position: relative;
     overflow: hidden;
 }
-
-
 
 .projects__img {
     width: 100%;
@@ -365,7 +364,8 @@ img {
     position: absolute;
     left: 0;
     background-color: rgba(0, 0, 0, .7);
-    background-color: rgba(70, 46, 61, 0.636);/* Elegir */
+    background-color: rgba(70, 46, 61, 0.636);
+    background-color: var(--colorPrimarioTrasparencia); /* Elegir */
     color: var(--colorSecundario);
     color: var(--colorTerciario); /* Elegir */
     width: 100%;
@@ -377,7 +377,70 @@ img {
     text-align: center;
     font-weight: 600;
 }
+
+
 .projects__project:hover .projects__info {
     opacity: 1;
     top: 0;
 }
+
+/* Contact */
+.contact {
+    background-image: linear-gradient(to top, #bdc2e841 0%, #bdc2e85b 1%, #e6dee94e 100%);
+    padding: calc(var(--separacion) * 4) 0 calc(var(--separacion) *2) 0; 
+    align-items: center;
+}
+
+.contact__header {
+    margin-bottom: 5rem;
+}
+
+.contact__form {
+    margin: 0 auto;  
+    max-width: 60%;
+}
+
+.contact__form,
+.contact__inputs {
+   display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact__row-1,
+.contact__row-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__input {
+    width: 48%;
+    outline: none;
+    color: var(--colorSecundarioTransparent);
+}
+.contact__msj {
+    color: var(--colorSecundarioTransparent);
+    outline: none;
+}
+
+.contact__input:hover, 
+.contact__msj:hover,
+.contact__submit:hover {
+    color: var(--colorSecundarioTransparent);
+    background-color: var(--colorTerciario);
+}
+
+.contact__input::placeholder,
+.contact__msj::placeholder,
+.contact__submit {
+    color: var(--colorSecundarioTransparent);
+}
+
+.contact__submit {
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    background-color: var(--colorTerciario);
+}
+
