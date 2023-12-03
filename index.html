@@ -12,12 +12,18 @@
     
     <section id="start" class="start">
             <header class="header ">
-                <div class="header__container">
-                    <h1>{ Araceli }</h1>
+                <div class="header__container ">
+                    <h2><a class="header__name" href="#start" id="header__name">{ Araceli }</a></h2>
 
-                    <nav id="header__nav">
-                        <ul id="header__links">
-                            <li><a href="#start" class="focus">Inicio</a></li>
+                    <!-- Adding Icons -->
+                    <div class="header__open-nav  " id="abrir"> 
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <nav class="header__nav" id="header__nav">
+                        <button class="header__cerrar" id="cerrar" > <i class="fa-regular fa-circle-xmark header__cerrar"></i></button>
+                        <ul class="header__links" id="header__links">
+                            <li><a href="#start" >Inicio</a></li>
                             <li><a href="#aboutme">Sobre Mí</a></li>
                             <li><a href="#education">Educación</a></li>
                             <li><a href="#projects">Portafolio</a></li>
@@ -25,10 +31,6 @@
                         </ul>
                     </nav>
 
-                    <!-- Adding Icons -->
-                    <div class="icon-nav">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
 
                     <nav class="icons-social-media">
                         <a href="#"><i class="fa-brands fa-square-github"></i></a>
@@ -40,8 +42,9 @@
             </header>
 
         <div class="welcome container">
-            <h2 class="welcome__heading">Araceli Polanco - Desarrolladora Front End</h2>
-            <p class="welcome__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1 class="welcome__heading">Araceli Polanco <br> Front-End Developer</h1>
+            <p class="welcome__text">Soy licenciada en Informática, con un interés especial en el desarrollo Front-End.</p>
+            <p>  Soy una mujer autodidacta, proactiva, disciplinada, motivada y colaborativa. </p>
             <a href="#portafolio" class="btn">Ir a Portafolio</a>
         </div>
     </section>
@@ -53,9 +56,10 @@
 
         <div class="about-me__container">
             <h2 class="about-me__header">Araceli Polanco</h2>
-            <h3 class="about-me__profession"> Front End Developer</h3>
-            <p class="about-me__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo nisi magni repellat praesentium omnis voluptatem deserunt consequatur repellendus reiciendis quo veritatis perspiciatis, voluptate excepturi labore enim qui! Ut, obcaecati totam.</p>
-            <p class="about-me__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eaque sed reiciendis, perspiciatis odio veritatis modi fugiat odit repellat sequi exercitationem. Quia placeat delectus beatae quo architecto aliquid ipsa suscipit.</p>
+            <h3 class="about-me__profession"> Front-End Developer</h3>
+            <p class="about-me__description"> Soy licenciada en Informática, con un interés especial en el desarrollo Front-End. Mi formación académica se complementa con diversos cursos, con los cuales he adquirido habilidades que me han permitido aplicar mis conocimientos en diversos proyectos, en donde he plasmado mi creatividad y habilidades técnicas.</p>
+            <p class="about-me__description">Soy una mujer autodidacta, proactiva, disciplinada, motivada y colaborativa, me desempeño muy bien trabajando en equipo, siempre con disposición a colaborar, así como a aprender de los demás.</p>
+            <p class="about-me__description">Mi deseo constante de aprender me impulsa a abordar nuevos desafíos con entusiasmo, así como el deseo de expandir mis habilidades y colaborar con un equipo dinámico en el mundo del desarrollo Front-End.</p>
             <a href="#" class="about-me__link btn">Descargar CV</a>
         </div>
     </section>
@@ -64,7 +68,7 @@
     <section class="education " id="education"> 
         <h2 class="education__header container">Educación</h2>
 
-        <div class="education__container">
+        <div class="education__container container">
 
             <div class="education__academics">
 
@@ -83,7 +87,7 @@
         
                     <div class="education__info">
                         <h3 class="education__certification">SCRUM Fundamentals Certified </h3>
-                        <p class="education__school">SRUMstudy</p>
+                        <p class="education__school">SCRUMstudy</p>
                         <p class="education__year">2023</p>
                     </div>
     
@@ -118,6 +122,7 @@
                 <h3 class="skills__title ">Tecnologías</h3>
             
                 <div class="skills__info">
+
                     <ul class="skills__ul">
                         <li class="skills__li">
                             <i class="fa-solid fa-code skills__i"></i>
@@ -275,5 +280,6 @@
         </nav>
     </footer>
 
+    <script src="/js/app.js"></script>
 </body>
 </html>
