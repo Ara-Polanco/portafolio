@@ -45,7 +45,7 @@
             <h1 class="welcome__heading">Araceli Polanco <br> Front-End Developer</h1>
             <p class="welcome__text">Soy licenciada en Informática, con un interés especial en el desarrollo Front-End.</p>
             <p>  Soy una mujer autodidacta, proactiva, disciplinada, motivada y colaborativa. </p>
-            <a href="#portafolio" class="btn">Ir a Portafolio</a>
+            <a href="#projects" class="btn">Ir a Portafolio</a>
         </div>
     </section>
 
@@ -251,19 +251,18 @@
 
                 <div class="contact__inputs">
                     <div class="contact__row-1">
-                        <input type="text" placeholder="Nombre" class="contact__input btn" name="contact__input">
-                        <input type="email" placeholder="Correo" class="contact__input btn" name="contact__input">
+                        <input id="name" type="text" placeholder="Nombre" class="contact__input btn" name="name" >
+                        <input id="email" type="email" placeholder="Correo" class="contact__input btn" name="email">
                     </div>
                     
                     <div class="contact__row-2">
-                        <input type="number" placeholder="Teléfono" class="contact__input btn" name="contact__input">
-                        <input type="text" placeholder="Asunto" class="contact__input btn" name="contact__input">
+                        <input id="phone" type="number" min="10" placeholder="Teléfono" class="contact__input btn" name="phone">
+                        <input id="subject" type="text" placeholder="Asunto" class="contact__input btn" name="subject">
                     </div>
                 </div>
-                <textarea class="contact__msj btn" name="contact__msj" placeholder="Mensaje" id="contact__msj" cols="30" rows="10"></textarea>
-
-                <input type="submit" class="contact__submit btn" name="contact__submit" id="contact__submit">
+                <textarea class="contact__msj btn contact__input" name="message" placeholder="Mensaje" id="message" cols="30" rows="10"></textarea>
                 
+                <input type="submit" class="contact__submit btn" name="submit" id="submit">
             </form>
         </div>
 

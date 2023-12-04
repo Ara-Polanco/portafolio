@@ -8,7 +8,11 @@
     --fuentePrincipal:  'Lora', serif;
     --separacion: 3rem;
  }
+/* 
 
+#ccc0b3 superior
+#d4c8bb
+*/
 html {
     font-size: 62.5%; /* 1rem = 10px */
     box-sizing: border-box;
@@ -23,7 +27,7 @@ html {
 
 body {
     font-family: var(--fuentePrincipal);
-    font-size: 1.rem;
+    font-size: 1.6rem;
     line-height: 2;
 }
 
@@ -634,6 +638,7 @@ img {
     gap: 1rem;
 }
 
+/* .alertMessage, */ /* Alerta */
 .contact__input {
     width: 100%;
     outline: none;
@@ -681,6 +686,7 @@ img {
     .contact__row-2 {
         flex-direction: row; /* mantener asi */
     }
+/*     .alertMessage,  *//* Alerta de formulario */
     .contact__input {
         font-size: 1.8rem;
     }
@@ -722,3 +728,22 @@ img {
     font-size: .8rem;
 }
 
+.alertMessage {
+    color: var(--colorSecundario);
+    border: 2px solid var(--colorSecundario);  
+    background-color: var(--colorFondo); 
+
+    border-radius: 1.3rem;
+    padding: .5rem 2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.correct {
+    color: green; 
+    border: 2px solid  green;
+}
+.error {
+    border: 2px solid  red;
+    color: red;
+}
