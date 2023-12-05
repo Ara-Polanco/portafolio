@@ -49,44 +49,26 @@ function validateForm(e) {
         case 'name':
             if(expressions.name.test(e.target.value)) {
                 elementsValidation.name = true
-                printAlert('Nombre agregado' )
-            } else {
-                printAlert('Error, nombre inválido', 'error')
-            } 
+            }  
         break
         case 'email':
             if(expressions.email.test(e.target.value)) {
                 elementsValidation.email = true
-                printAlert('Correo agregado' )
-            } else {
-                printAlert('Error, correo inválido', 'error')
-            }
-            
+            }  
         break
         case 'phone':
             if(expressions.number.test(e.target.value)) {
                 elementsValidation.phone = true
-                printAlert('Teléfono agregado' )
-            } else {
-                printAlert('Error, teléfono inválido', 'error')
-            }
-            
+            }  
         break
         case 'subject':
             if(expressions.message.test(e.target.value)) {
                 elementsValidation.subject = true
-                printAlert('Asunto agregado' )
-            } else {
-                printAlert('Error, asunto inválido', 'error')
-            }
-            
+            }     
         break
         case 'message':
             if(expressions.message.test(e.target.value)) {
                 elementsValidation.message = true
-                printAlert('Mensaje agregado')
-            } else {
-                printAlert('Error, mensaje inválido', 'error')
             } 
         break
     }
@@ -107,6 +89,22 @@ formElement.addEventListener('submit', (e) => {
         elementsValidation.message = false
     } else {
         printAlert('Todos los campos son obligatorios', 'error')
+
+        if(elementsValidation.name == false) {
+            printAlert('Error, nombre inválido', 'error')
+        }
+        if(elementsValidation.email == false) {
+            printAlert('Error, email inválido', 'error')
+        }
+        if(elementsValidation.phone == false) {
+            printAlert('Error, teléfono inválido', 'error')
+        }
+        if(elementsValidation.subject == false) {
+            printAlert('Error, asunto inválido', 'error')
+        }
+        if(elementsValidation.message == false) {
+            printAlert('Error, mensaje inválido', 'error')
+        }
     }
 })
 

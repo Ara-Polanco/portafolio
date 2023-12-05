@@ -4,15 +4,12 @@
  :root {
     --colorPrimario : #F4F9F9;
     --colorSecundario:   #8675a9ce;
-    --colorFondo: #f6e7d8d3;
+    --colorFondo: rgba(218, 194, 239,.9);
+    --colorFondo: rgb(180, 174, 183);  
     --fuentePrincipal:  'Lora', serif;
     --separacion: 3rem;
  }
-/* 
 
-#ccc0b3 superior
-#d4c8bb
-*/
 html {
     font-size: 62.5%; /* 1rem = 10px */
     box-sizing: border-box;
@@ -153,6 +150,7 @@ img {
     left: 0;
     right: 0;
     background-color: #c2b4a7f3; /* Mantener este tono */
+    background-color: var(--colorFondo); /* Mantener este tono */
     text-shadow: 0 0 2px black;
    
     display: flex;
@@ -638,7 +636,6 @@ img {
     gap: 1rem;
 }
 
-/* .alertMessage, */ /* Alerta */
 .contact__input {
     width: 100%;
     outline: none;
@@ -686,7 +683,7 @@ img {
     .contact__row-2 {
         flex-direction: row; /* mantener asi */
     }
-/*     .alertMessage,  *//* Alerta de formulario */
+
     .contact__input {
         font-size: 1.8rem;
     }
