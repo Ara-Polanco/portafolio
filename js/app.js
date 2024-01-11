@@ -3,12 +3,6 @@ const navElement = document.querySelector('#header__nav')
 const openElement = document.querySelector('#abrir')
 const closeElement = document.querySelector('#cerrar')
 
-/* const nameElement = document.querySelector('#name')
-const emailElement = document.querySelector('#email')
-const phoneElement = document.querySelector('#phone')
-const subjectElement = document.querySelector('#subject')
-const messageElement = document.querySelector('#message') */
-
 const formElement = document.querySelector('.contact__form')
 const elementsToValidate = document.querySelectorAll('.contact__form .contact__input') /* Todos los elementos a validar */
 
@@ -75,7 +69,7 @@ function validateForm(e) {
 }
 
 formElement.addEventListener('submit', (e) => {
-    e.preventDefault()
+   /*  e.preventDefault() */
 
     if(elementsValidation.name && elementsValidation.email && elementsValidation.phone && elementsValidation.subject && elementsValidation.message) {
         formElement.reset()
